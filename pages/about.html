@@ -12,7 +12,7 @@
 
     <title>About Us</title>
 </head>
-<body>
+<body class="bg-light">
    <!-- nav -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top text-white">
     <div class="container-fluid d-flex justify-content-between">
@@ -34,13 +34,13 @@
             <a class="nav-link" href="services.html">Services</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link active" href="about.html">About us</a>
           </li>
            <li class="nav-item">
             <a class="nav-link" href="connect.html">Connect Us</a>
           </li>
            <li class="nav-item">
-            <a class="nav-link active" href="companies.html">Companies</a>
+            <a class="nav-link " href="companies.html">Companies</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Ar</a>
@@ -62,8 +62,8 @@
   </nav>
 
 
-  <!-- LogIn Modal -->
-  <section class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true"style="display: none;">
+   <!-- LogIn Modal -->
+  <section class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
           <!-- Login Form -->
@@ -89,7 +89,7 @@
               </div>
             </div>
             <div class="modal-footer pt-4">                  
-              <button type="button" class="btn btn-dark mx-auto w-100">Login</button>
+              <a href="../user/profaile.html" type="button" class="btn btn-dark mx-auto w-100">Login</a>
             </div>
             <p class="text-center">Not yet account, <a href="#" data-bs-toggle="modal" data-bs-target="#SignForm"
             data-bs-dismiss="modal" >Signup</a></p> 
@@ -99,9 +99,10 @@
   </section>
 
   <!-- sign up Modal -->
-  <section class="modal fade" id="SignForm" tabindex="-1" aria-hidden="true"style="display: none;">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
+  <section class="container">
+    <div class="modal fade" id="SignForm" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
             <form action="" class="mt-5 border p-4 bg-light shadow">
                 <div class="modal-header">
                   <h5 class="modal-title">Create Your Account</h5>
@@ -127,13 +128,13 @@
                           <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password">
                       </div>
                       <div class="col-md-12">
-                          <button type="button"
-                          class="btn btn-dark mx-auto w-100">Signup Now</button>
+                          <a href="../user/profaile.html" type="button"
+                          class="btn btn-dark mx-auto w-100">Signup Now</a>
                   </div>
               </div>
-             <p class="text-center mt-3 text-secondary">If you have account, Please <a href="#" data-bs-toggle="modal" data-bs-target="#ModalForm"data-bs-dismiss="modal">Login Now</a></p>
-
             </form>
+            <p class="text-center mt-3 text-secondary">If you have account, Please <a href="#" data-bs-toggle="modal" data-bs-target="#ModalForm"data-bs-dismiss="modal">Login Now</a></p>
+
           </div>
       </div>
     </div>
